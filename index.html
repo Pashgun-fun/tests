@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Тесты</title>
+</head>
+<body>
+
+<main class="main">
+    <div class="main__container _container">
+        <div class="main__buttons">
+            <a href="#" class="main__button">Создать тест</a>
+        </div>
+        <div class="main__tests">
+            <div class="main__test">
+                <div class="test">
+                    <div class="test__title">Название теста</div>
+                    <div class="test__quantity">Вопросов: <span>24</span></div>
+                    <div class="test__difficult">Сложность: <span>4</span>/5</div>
+                    <div class="test__buttons">
+                        <a href="#" class="test__open">Открыть тест</a>
+                        <a href="" class="test__remove"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="create">
+    <div class="create__container">
+        <div class="create__body">
+            <div class="create__title">Создайте свой тест</div>
+            <form action="" class="create__form">
+                <label>Тема текста <br>
+                    <input type="text">
+                </label>
+                <div class="create__questions">
+                    <div class="questions">
+                        <div class="questions__title">
+                            Вопросы
+                            <a href="#" class="questions__add">
+                                <div class="questions__radio-create">
+                                    <div class="form_radio">
+                                        <input id="radio-1" type="radio" name="radio" value="text">
+                                        <label for="radio-1">Без вариантов ответа</label>
+                                    </div>
+                                    <div class="form_radio">
+                                        <input id="radio-2" type="radio" name="radio" value="radio">
+                                        <label for="radio-2">С вариантами ответа</label>
+                                    </div>
+                                    <div class="questions__next">Далее</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="questions__body">
+                            <div class="text-question">
+                                <div class="error-text"></div>
+                                <label>
+                                    Название вопроса <br>
+                                    <input type="text" name="name" class="valid-text">
+                                </label>
+                                <label>
+                                    Ответ на вопрос <br>
+                                    <input type="text" name="answer" class="valid-text">
+                                </label>
+                                <div class="text-buttons _buttons">
+                                    <a href="#" class="remove-question">Удалить</a>
+                                    <a href="#" class="add-question">Добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="./assets/js/index.js"></script>
+</body>
+</html>
